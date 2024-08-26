@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" href="../imagens/Logo.png">
+  <script src="../javascript/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="../imagens/Logo.png" alt="Logo da Empresa" style="width: 150px; height: auto;">
+    <h1>Contato</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../paginas/sobre.html">Sobre</a></li>
+        <li class="dropdown">
+          <a href="../paginas/servicos.html" class="dropbtn">Serviços</a>
+          <ul class="dropdown-content">
+            <li><a href="../paginas/consultoria.html">Consultoria</a></li>
+            <li><a href="../paginas/desenvolvimento.html">Desenvolvimento Web</a></li>
+            <li><a href="../paginas/suporte.html">Suporte Técnico</a></li>
+          </ul>
+        </li>
+        <li><a href="../paginas/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Formulário de Contato</h2>
+      <form id="contactForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label for="subscribe">Inscreva-se na newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+      
+      <p id="formNotification" style="display: none; margin-top: 10px;"></p>
+    </section>
+  </main>
+  <footer>
+    <address>
+      <p>© 2024 Carlin Computers. Todos os direitos reservados.</p>
+    </address>
+  </footer>
+</body>
+</html>
